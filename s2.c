@@ -1,6 +1,6 @@
 // NOTE: You may copy any or all of this code, but please credit Sandor Schneider.
 // #define _CRT_SECURE_NO_WARNINGS    // For Visual Studio
-#include <stdio.h>
+#include <stdio.h>                    // Chris Curl version from ss.c by Schneider.
 #include <math.h>
 #include <string.h>
 #include <stdlib.h>
