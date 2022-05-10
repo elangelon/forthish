@@ -12,4 +12,4 @@ Simple down counter
 
 with an editor write a;[#." "1-#] into counter.txt, then
 $ ./stable counter.txt 10
-=> 10 9 8 7 6 5 4 3 2 1
+=> 10 9 8 7 6 5 4 3 2 1 
