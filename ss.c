@@ -2,8 +2,8 @@
     !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcd
   efghijklmnopqrstuvwxyz{|}~ */
 
-#include <stdio.h> /* stable.c STABLE minimalist FORTH like VM */
-#include <string.h>
+#include <stdio.h>  /* stable.c STABLE minimalist FORTH like VM */
+#include <string.h> /* ss.c is a version of STABLE both by Sandor Schneider */
 #include <stdlib.h>
 #include <math.h>
 union flin { float f[2400]; int i[2400]; char b[9600]; }; static union flin st; 
