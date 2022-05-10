@@ -1,12 +1,11 @@
 // NOTE: You may copy any or all of this code, but please credit Sandor Schneider.
 // #define _CRT_SECURE_NO_WARNINGS    // For Visual Studio
-// #include <windows.h>
 #include <stdio.h>
 #include <math.h>
 #include <string.h>
 #include <stdlib.h>
 #include <time.h>
-int GetTickCount() { return clock(); }
+int GetTickCount() { return clock(); } // #include <windows.h>
 #define INT2POINTER(a) ((char*)(intptr_t)(a))
 #define POINTER2INT(a) ((int)(intptr_t)(a))
 #define INT2FILEPTR(a) ((FILE*)(intptr_t)(a))
@@ -17,8 +16,6 @@ int GetTickCount() { return clock(); }
 union flin { float f[SZ/4]; int i[SZ/4]; char b[SZ]; }; static union flin st;
 static char ex[80], u, a, k = 0, *y;
 static int c, h, r, cb = SZ-3000, p, s=1, ro=64, rb=35, sb=1, t;
-clock_t ticks;
-
 /* <33 */ void X() { p = 0; } void N() {}
 /*  !  */ void f33() { st.i[TOS] = NOS; s -= 2; }
 /*  "  */ void f34() { while (st.b[p] != '"') { putc(st.b[p++], stdout); } ++p; }
